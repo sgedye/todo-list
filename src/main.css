@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  background-color: burlywood;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 768px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flexbox .board {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  min-height: 400px;
+  background-color: crimson;
+}
+
+.flexbox .card {
+  padding: 15px 25px;
+  background-color: ghostwhite;
+  cursor: move;
+  cursor: grab;
+  margin-bottom: 15px;
+}
+.flexbox .card:active {
+  cursor: grabbing;
+  opacity: .4;
+}
+
+.flexbox .card.disabled,
+.flexbox .card.disabled:active {
+  color: #333;
+  background-color: #aaa;
+  cursor: not-allowed;
+}
