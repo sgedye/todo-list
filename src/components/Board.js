@@ -5,7 +5,10 @@ function Board(props) {
     e.preventDefault()
     const cardId = e.dataTransfer.getData('card_id')
     const card = document.getElementById(cardId)
-    e.target.appendChild(card)
+    card.parentElement.id === 'completed-todos'
+      ? card.draggable = false
+      : e.target.appendChild(card)
+    console.log(card, card.parentElement.id)
   }
   const dragOver = e => e.preventDefault()
 

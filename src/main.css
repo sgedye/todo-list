@@ -4,6 +4,17 @@ body {
   background-color: burlywood;
 }
 
+#addCard {
+  width: 100%;
+  min-height: 50px;
+  background-color: blue;
+}
+#addCard > div {
+  display: inline-block;
+  min-width: 10%;
+  height: 100%;
+}
+
 .flexbox {
   display: flex;
   justify-content: space-around;
@@ -35,8 +46,8 @@ body {
   opacity: .4;
 }
 
-.flexbox .card.disabled,
-.flexbox .card.disabled:active {
+#completed-todos .card,
+#completed-todos .card:active {
   color: #333;
   background-color: #aaa;
   cursor: not-allowed;

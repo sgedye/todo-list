@@ -7,8 +7,9 @@ function Card(props) {
   return (
     <div
       id={props.id}
-      className={props.className}
-      draggable={props.draggable}
+      className="card"
+      draggable={true}
+      // priority={props.priority}
       onDragStart={dragStart}
       onDragOver={dragOver}
     >
